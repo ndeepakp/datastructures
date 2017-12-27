@@ -13,6 +13,30 @@ public class InsertionSort {
             array[i + 1] = key;
         }
     }
+
+    public void insertionSortCustom(int[] arr) {
+
+        int key;
+
+        for (int j = 1; j < arr.length; j++) {
+            key = arr[j];
+            int i = j - 1;
+
+            while( (i > -1) && (arr[i] > key) ) {
+                arr[i + 1] = arr[i];
+                i--;
+            }
+
+            arr[i + 1] = key;
+        }
+    }
+
+    public static void main(String... ar) {
+
+        int[] arr = new int[]{34,2,12,56,9,7,44,333};
+        insertionSort(arr);
+        System.out.println(arr[arr.length - 2]);
+    }
 }
 
 /**

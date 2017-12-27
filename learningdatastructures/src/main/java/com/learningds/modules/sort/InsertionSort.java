@@ -34,6 +34,8 @@ public class InsertionSort {
     public static void main(String... ar) {
 
         int[] arr = new int[]{34,2,12,56,9,7,44,333};
+        
+        // Print the second maximum number
         insertionSort(arr);
         System.out.println(arr[arr.length - 2]);
     }

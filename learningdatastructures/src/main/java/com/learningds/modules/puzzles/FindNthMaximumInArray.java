@@ -31,6 +31,5 @@ public class FindNthMaximumInArray {
 //        int[] arr = new int[]{8, 1, 66, 3, 34, 2, 4, 65, 124};
     	int[] arr = new int[]{2,3,1,5,4};
         System.out.println(findTheSecondMaximumElementInArray(arr));
-        System.out.println(secondMax(arr));
     }
 }

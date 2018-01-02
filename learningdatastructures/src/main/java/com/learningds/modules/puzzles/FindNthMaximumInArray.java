@@ -21,6 +21,8 @@ public class FindNthMaximumInArray {
             if (temp < arr[i]) {
                 secondTemp = temp;
                 temp = arr[i];
+            } else if ( secondTemp < arr[i]) {
+                secondTemp = arr[i];
             }
         }
 
